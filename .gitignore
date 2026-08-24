@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# uv
+.uv-cache/
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# QA render artifacts (design-system.md §5): pptx -> pdf -> one png per slide.
+# The committed example deck and brand assets are checked in explicitly, so keep
+# these patterns narrow enough not to swallow them.
+*.pdf
+slide-*.png
+
+# ...but the example deck's PDF companion is checked in on purpose.
+!examples/example-deck.pdf
